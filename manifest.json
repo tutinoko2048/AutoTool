@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "AutoTool",
+    "description": "自動でツールを持ち替えます",
+    "version": [1, 0, 0],
+    "uuid": "416456ba-7a69-4cd5-bcd4-2d5596023b9a",
+    "min_engine_version": [1, 13, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "description": "",
+      "version": [1, 0, 0],
+      "uuid": "eb46b84d-13fd-440a-bc72-da0be7536be8",
+      "language": "javascript",
+      "entry": "scripts/index.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.0.0-beta"
+    }
+  ],
+  "metadata": {
+    "generated_with": {
+      "TokaTools-Manifest-Generator": ["1.8.0"]
+    }
+  }
+}
