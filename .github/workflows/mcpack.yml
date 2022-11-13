@@ -12,7 +12,7 @@ jobs:
       - name: Set Name
         id: set-name
         run: |
-          FILENAME=$(cat ./manifest.json | jq '.header.name + "_v" + .header.version' -r).mcpack
+          FILENAME=$(cat ./manifest.json | jq '.header.name + "_v" + .header.version |= join(".")' -r).mcpack
           echo "::set-output name=filename::$FILENAME"
           
       - name: Make Archive
